@@ -1,17 +1,32 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>לומדים אותיות</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>ברוכים הבאים ללימוד אותיות</h1>
-  <div id="letters-container"></div>
-  <div id="result">
-    <img id="image" src="" alt="" />
-    <p id="word"></p>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #fef6e4;
+  direction: rtl;
+}
+
+#letters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.letter-button {
+  margin: 10px;
+  font-size: 2em;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid #333;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#result {
+  margin-top: 30px;
+}
+
+#image {
+  max-width: 200px;
+  height: auto;
+}
